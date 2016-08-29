@@ -220,6 +220,7 @@ Agemove.prototype = {
           this.bindHeader();
           this.contentEvent();
           this.jianli();
+          this.MobileEvent()
          
       },
       bindHeader:function(){
@@ -903,9 +904,9 @@ Agemove.prototype = {
                     '<div id="huxi"><ul class="tuul"><li class="no1"><a href="#"><img src="images/0.jpg" /></a></li><li><a href="#"><img src="images/1.jpg" /></a></li><li><a href="#"><img src="images/2.jpg" /></a></li><li><a href="#"><img src="images/3.jpg" /></a></li><li><a href="#"><img src="images/4.jpg" /></a></li><li><a href="#"><img src="images/5.jpg" /></a></li><li><a href="#"><img src="images/6.jpg" /></a></li></ul><div class="anniu"><span class="leftbut"></span><span class="rightbut"></span></div><ul class="dianul"><li class="cur"></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>',
                     '<div id="youku"><div class="anniu"><span class="zuo"></span><span class="you"></span></div><ul class="tuul"><li class="no0_youku"><a href="#"><img src="images/youku/0.jpg" /></a></li><li class="no1_youku"><a href="#"><img src="images/youku/1.jpg" /></a></li><li class="no2_youku"><a href="#"><img src="images/youku/2.jpg" /></a></li><li class="no3_youku"><a href="#"><img src="images/youku/3.jpg" /></a></li><li class="no4_youku"><a href="#"><img src="images/youku/4.jpg" /></a></li><li class="waiting"><a href="#"><img src="images/youku/5.jpg" /></a></li><li class="waiting"><a href="#"><img src="images/youku/6.jpg" /></a></li><li class="waiting"><a href="#"><img src="images/youku/7.jpg" /></a></li><li class="waiting"><a href="#"><img src="images/youku/8.jpg" /></a></li></ul><div class="xiaoyuandian"><ul><li></li><li></li><li class="cur"></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div></div>',
                     '<div id="huxi"><ul class="tuul"><li class="no1"><a href="#"><img src="images/0.jpg" /></a></li><li><a href="#"><img src="images/1.jpg" /></a></li><li><a href="#"><img src="images/2.jpg" /></a></li><li><a href="#"><img src="images/3.jpg" /></a></li><li><a href="#"><img src="images/4.jpg" /></a></li></ul><div class="anniu"><span class="leftbut"></span><span class="rightbut"></span></div><ul class="dianul"><li class="cur"></li><li></li><li></li><li></li><li></li></ul></div>',
-                    '<div class="device device-fixed" style="top: 57px;left:50%; margin-left:-196px;" id="city-pickerInDevice"><div class="device-content"><div id="iwindow"><iframe src="demo.html" width="320" height="569" frameborder="0"></iframe></div></div></div>',
-                    '<div class="device device-fixed" style="top: 57px;left:50%;margin-left:-196px;" id="city-pickerInDevice"><div class="device-content"><div id="iwindow"><iframe src="demo2.html" width="320" height="569" frameborder="0"></iframe></div></div></div>',
-                    '<div class="device device-fixed" style="top: 57px;left:50%;margin-left:-196px;" id="city-pickerInDevice"><div class="device-content"><div id="iwindow"><iframe src="demo3.html" width="320" height="569" frameborder="0"></iframe></div></div></div>',
+                    '<div class="device device-fixed" id="city-pickerInDevice"><div class="device-content"><div id="iwindow"><iframe src="demo.html" width="320" height="569" frameborder="0"></iframe></div></div></div>',
+                    '<div class="device device-fixed" id="city-pickerInDevice"><div class="device-content"><div id="iwindow"><iframe src="demo2.html" width="320" height="569" frameborder="0"></iframe></div></div></div>',
+                    '<div class="device device-fixed" id="city-pickerInDevice"><div class="device-content"><div id="iwindow"><iframe src="demo3.html" width="320" height="569" frameborder="0"></iframe></div></div></div>',
                     '<div class="boxCavans"><canvas id="myCanvas" width="336" height="410"></canvas></div>',
                     ' <div id="main" style="height:400px;background:#fff;"></div>'
                     ]                  
@@ -976,21 +977,39 @@ Agemove.prototype = {
                 "title": "CSS3"
             }
             ]; 
+
+            var x1,y1
+            var ua = navigator.userAgent;
+			var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+			    isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+			    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+			    isMobile = isIphone || isAndroid;
+			    if(isMobile) {
+			    	x1 = 50
+			    	y1 = 100
+			    }else{
+                     x1 = 200
+                     y1 = 250
+                    
+
+			         
+			    }
+
             var  t = -90;
             var  R = 100 // 半径
             canvas.width = 600;
             canvas.height = 600;
             for (var i = 0; i < data.length; i++) {
               ctx.beginPath();
-              ctx.moveTo(200, 250)
+              ctx.moveTo(x1, y1)
               var z =  data[i].value*360
               ctx.fillStyle =  data[i].color;
-              ctx.arc(200, 250, R,t*Math.PI/180 , (t+z)*Math.PI/180);
+              ctx.arc(x1, y1, R,t*Math.PI/180 , (t+z)*Math.PI/180);
               var x,y
               var Tex1 = data[i].title
               var textAngle  = t + 1/2 *z    
-              x = 200 + Math.cos(textAngle*Math.PI/180)*(R+20)
-              y = 250 + Math.sin(textAngle*Math.PI/180)*(R+20)
+              x = x1 + Math.cos(textAngle*Math.PI/180)*(R+20)
+              y = y1 + Math.sin(textAngle*Math.PI/180)*(R+20)
                 if(textAngle>90&&textAngle<270){
                   ctx.textAlign ='end'
                 }
@@ -998,8 +1017,25 @@ Agemove.prototype = {
                
                 ctx.fillText(Tex1, x, y)
               t += z
+
+           
             };
+      },MobileEvent(){
+            var ua = navigator.userAgent;
+			var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+			    isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+			    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+			    isMobile = isIphone || isAndroid;
+			    if (isMobile) {
+                     $('.nav1 .p span').css('display','none');
+                      $("body,html").on("touchend", function (event) {
+					    event.preventDefault();
+					});
+
+			    };
+
       }
+
      
 }
 
