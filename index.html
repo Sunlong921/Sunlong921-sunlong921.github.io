@@ -407,8 +407,11 @@
                   height : 400, 
                   progress : 0
                 });
+                  var  w = window.width();
+                  var  h  =window.height();
+                  init(w,h)
                  var  imgArr = ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg','images/6.jpg','images/7.jpg','images/8.jpg','images/9.jpg','images/wangzhan2.jpg','images/wangzhan1.jpg','images/10.jpg','images/20.jpg','images/30.jpg','images/40.jpg','images/50.jpg','images/60.jpg','images/70.jpg','images/80.jpg','images/90.jpg','images/youku/1.jpg','images/youku/2.jpg','images/youku/3.jpg','images/youku/4.jpg','images/youku/5.jpg','images/youku/6.jpg','images/youku/7.jpg','images/AnyData4/images/banner.jpg','images/AnyData4/images/banner_1.jpg','images/youku/8.jpg','images/AnyData4/images/nwe4.jpg','images/AnyData4/images/nwe3.jpg','images/AnyData4/images/nwe2.jpg','images/hehe/images/nr-banner4.png','images/hehe/images/banner1.jpg','images/hehe/images/banner2.jpg','images/hehe/images/banner3.jpg'];
-            
+                
                  for (var i = 0; i <  imgArr.length; i++) {
                     var img = new Image();
                        img.src = imgArr[i];
@@ -419,7 +422,7 @@
                            if (kb ==imgArr.length) {
                              $(".loading").css('display','none');
                              $(".no1").addClass('cur');
-                            
+                           
                            };
                    }
           };
