@@ -978,8 +978,9 @@ Agemove.prototype = {
             }
             ]; 
 
-            var x1,y1
+            var x1,y1,R
             var ua = navigator.userAgent;
+
 			var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
 			    isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
 			    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
@@ -987,13 +988,15 @@ Agemove.prototype = {
 			    if(isMobile) {
 			    	x1 = 150
 			    	y1 = 200
+			    	R  = 70
 			    }else{
                      x1 = 200
                      y1 = 250
+                     R  = 100
 			    }
 
             var  t = -90;
-            var  R = 100 // 半径
+         
             canvas.width = 600;
             canvas.height = 600;
             for (var i = 0; i < data.length; i++) {
