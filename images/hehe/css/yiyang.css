@@ -1,0 +1,80 @@
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	background: url(../images/dh-bj.jpg) repeat-x ;
+	z-index: 1;
+}
+#header .bj  {
+ width: 1029px;
+ padding-top: 20px;
+ margin: 0 auto;
+}
+#header .bj  .logo{
+	width: 320px;
+	float: left;
+}
+#header .bj  .logo h3{
+	width: 308px;
+	height: 59px;
+	background: url(../images/ling.png) no-repeat  -9px -17px;
+	text-indent: -9999px;
+} 
+#header .bj .nav{
+	width: 675px;
+	float: left;
+	margin-left: 21px;
+}
+
+#header .bj .nav ul li{
+  
+    float: left;
+    
+}
+#header .bj .nav ul li a{
+	 padding: 0 21px;
+	
+}
+#header .bj .nav ul li a:link , #header .bj .nav ul li a:visited{
+	color: #333333;
+	line-height: 60px;
+	display: block;
+     text-decoration: none; 
+     font-weight: bold;
+  	font-size: 14px;
+}
+#header .bj .nav ul li a:hover{
+	color: #093f75;
+	background: url(../images/hover1.png) no-repeat center bottom; 
+	display: block;
+}
+
+.banxin{
+	 width: 1028px;
+     margin: 0 auto;
+     position: relative;
+}
+#footer {
+	width: 100%;
+	height:40px;
+	background: url(../images/footer-bj2.jpg) repeat-x;
+	position: absolute;
+	top: 1790px;
+}
+
+
+#footer .logo{
+	width: 68px;
+	height: 40px;
+	background: url(../images/ling.png) no-repeat -432px -129px;
+	float: left;
+}
+#footer  p{
+	float: left;
+	line-height: 35px;
+	padding-left: 15px;
+	color: #696969;
+}

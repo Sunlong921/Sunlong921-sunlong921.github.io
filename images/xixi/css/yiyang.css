@@ -1,0 +1,111 @@
+
+#banner ul{
+	position: relative;
+}
+
+#banner ul li{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+#banner ul .bannerb1{
+	 
+     height: 1100px;
+	background: #638111 url(../images/banner01b.jpg) ;
+}
+#banner ul .bannerb1 div{
+	height: 755px;
+	background:  url(../images/banner01.jpg) no-repeat center top;
+}
+#banner ul .bannerb2{
+	height: 1100px;
+	background: #425C15 url(../images/banner02b.jpg) ;
+}
+#banner ul .bannerb2 div{
+	height: 755px;
+	background:  url(../images/banner02.jpg) no-repeat center top;
+}
+ 
+ .zhengti{
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+     }
+    #heaber{
+	width: 953px;
+	margin: 0 auto;
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+#heaber .logo{
+	padding-top: 51px;
+}
+ #heaber .logo h3{
+ 	width: 159px;
+ 	height: 44px;
+ 	background: url(../images/ling.png) no-repeat -11px -6px;
+ 	display: block;
+ 	text-indent: -9999px;
+ }
+ #heaber p{
+ 	width: 243px;
+ 	height: 20px;
+ 	background: url(../images/ling.png) no-repeat -30px -143px;
+ 	margin-top: 8px;
+ }
+ #heaber p span{
+ 	color: #fff;
+    line-height: 20px;
+    font-family: "微软雅黑","黑体","宋体","楷体";
+     
+ }
+  #heaber p span a{
+  	
+       padding-right: 54px;
+        padding-left: 14px;
+  }
+   #heaber p span a:link ,  #heaber p span a:visited{
+   	line-height: 20px ;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+   }
+    #heaber p span a:hover{
+    	color: #02699e;
+    	text-decoration: underline;
+    }
+     #heaber .nav{
+     	padding-top: 27px;
+     	padding-right: 18px;
+     }
+     #heaber .nav  ul li{
+     	float: left;
+        margin: 4px;
+        text-align: center;
+
+     }
+     #heaber .nav  ul li a{
+        width: 101px;
+     	height: 40px;
+     	display: block;
+     	background: url(../images/ling.png) no-repeat -211px -10px;
+     	
+     }
+     #heaber .nav  ul li a:link , #heaber .nav  ul li a:visited{
+     	line-height: 40px;
+        font-size: 14px;
+        font-family: '微软雅黑';
+        color: #fff;
+        text-decoration: none;
+        
+     }
+     #heaber .nav  ul li a:hover{
+     	width: 101px;
+     	height: 40px;
+     	background-position: -211px -61px; 
+     }
+     
+   
+  
