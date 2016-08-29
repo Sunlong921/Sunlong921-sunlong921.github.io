@@ -228,9 +228,30 @@ ul{list-style: none;}
    
      .p2 , .p3,.p4{padding-bottom: 25px;}
      .p5{text-align: center;}
+
 @media (min-width:1000px){
 	.nav1{
 		margin-top:-200px;
 		
 	}
+}
+@media (max-width:580px){
+  .lx .p2 {
+        background: url(../images/qq.png)no-repeat center left;
+  }
+   .lx .p2:hover{
+        background: url(../images/qq-hover.png)no-repeat center left;
+  }
+   .lx .p3{
+      background: url(../images/xinxiang2.png)no-repeat  center left;
+   }
+  .lx .p3:hover{
+        background: url(../images/xinxiang.png)no-repeat center left;
+      }
+    .lx .p4{
+     background: url(../images/shouji.png)no-repeat center left;
+   }
+   .nav1 .p span{display: none;position: none;}
+   #demo p{margin: 0;}
+   .device{background-image:none;}
 }
