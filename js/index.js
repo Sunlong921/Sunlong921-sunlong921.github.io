@@ -1027,7 +1027,7 @@ Agemove.prototype = {
 			    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
 			    isMobile = isIphone || isAndroid;
 			    if (isMobile) {
-                     $('.nav1 .p span').css('display','none');
+                     // $('.nav1 .p span').css('display','none');
                       $("#demo .demo_centent").on("touchend", function (event) {
 					    event.preventDefault();
 					});
