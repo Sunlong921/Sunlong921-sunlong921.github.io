@@ -977,35 +977,26 @@ Agemove.prototype = {
             }
             ]; 
             var  t = -90;
-            var  R = 150 // 半径
+            var  R = 100 // 半径
             canvas.width = 600;
             canvas.height = 600;
             for (var i = 0; i < data.length; i++) {
               ctx.beginPath();
-
-              ctx.moveTo(250, 300)
-
+              ctx.moveTo(200, 250)
               var z =  data[i].value*360
-
               ctx.fillStyle =  data[i].color;
-                
-              ctx.arc(250, 300, R,t*Math.PI/180 , (t+z)*Math.PI/180);
-
+              ctx.arc(200, 250, R,t*Math.PI/180 , (t+z)*Math.PI/180);
               var x,y
               var Tex1 = data[i].title
               var textAngle  = t + 1/2 *z    
-              
-              x = 250 + Math.cos(textAngle*Math.PI/180)*(R+20)
-              y = 300 + Math.sin(textAngle*Math.PI/180)*(R+20)
-           
-
+              x = 200 + Math.cos(textAngle*Math.PI/180)*(R+20)
+              y = 250 + Math.sin(textAngle*Math.PI/180)*(R+20)
                 if(textAngle>90&&textAngle<270){
                   ctx.textAlign ='end'
                 }
                 ctx.fill();
                
                 ctx.fillText(Tex1, x, y)
-              
               t += z
             };
       }
