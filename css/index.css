@@ -253,7 +253,7 @@ ul{list-style: none;}
      background: url(../images/shouji.png)no-repeat center left;
    }
    .nav1 .p span{display: none;position: none;}
-   #demo p{margin: 0;}
+   #demo p{margin: 0;color: #de3b3b;right: 0;top: 0;}
    .device{background-image:none;}
    .device.device-fixed{top: 0;}
    .device .device-content{top: 0;}
