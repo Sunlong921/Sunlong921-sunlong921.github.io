@@ -985,14 +985,11 @@ Agemove.prototype = {
 			    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
 			    isMobile = isIphone || isAndroid;
 			    if(isMobile) {
-			    	x1 = 100
-			    	y1 = 150
+			    	x1 = 150
+			    	y1 = 200
 			    }else{
                      x1 = 200
                      y1 = 250
-                    
-
-			         
 			    }
 
             var  t = -90;
