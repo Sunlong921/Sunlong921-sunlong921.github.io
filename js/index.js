@@ -1028,7 +1028,7 @@ Agemove.prototype = {
 			    isMobile = isIphone || isAndroid;
 			    if (isMobile) {
                      $('.nav1 .p span').css('display','none');
-                      $("body,html").on("touchend", function (event) {
+                      $("#demo .demo_centent").on("touchend", function (event) {
 					    event.preventDefault();
 					});
 
