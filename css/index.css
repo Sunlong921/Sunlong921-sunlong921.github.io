@@ -228,13 +228,14 @@ ul{list-style: none;}
    
      .p2 , .p3,.p4{padding-bottom: 25px;}
      .p5{text-align: center;}
-
+.device.device-fixed{top: 57px;left:50%; margin-left:-196px;}
 @media (min-width:1000px){
 	.nav1{
 		margin-top:-200px;
 		
 	}
 }
+
 @media (max-width:580px){
   .lx .p2 {
         background: url(../images/qq.png)no-repeat center left;
@@ -254,4 +255,6 @@ ul{list-style: none;}
    .nav1 .p span{display: none;position: none;}
    #demo p{margin: 0;}
    .device{background-image:none;}
+   .device.device-fixed{top: 0;}
+   .device .device-content{top: 0;}
 }
