@@ -1,0 +1,79 @@
+{0 : [
+{
+"name": "天涯明月刀",
+"url": "http://act.daoju.qq.com/act/a20161208wuxia/index.html",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/wuxia.png",
+},
+{
+"name": "DNF",
+"url": "http://act.daoju.qq.com/act/a20170427dnf/index.html",
+"img_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498651332&di=c133dfb4926f545dc97acd443cab9c15&imgtype=jpg&er=1&src=http%3A%2F%2Fi2.17173.itc.cn%2F2010%2Fnews%2F2010%2F12%2F27%2Flj1227dnf06s.jpg"
+},
+{
+"name": "剑灵",
+"url": "http://act.daoju.qq.com/act/a20160912bnsxyx/index.htm",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/bns.png"
+},
+{
+"name": "使命呼唤",
+"url": "http://act.daoju.qq.com/act/a20170503abyss/index.html",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/cod.png"
+},
+{
+"name": "天堂",
+"url": "http://act.daoju.qq.com/act/a20170207memory/index.shtml",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/tiantang.png"
+},
+{
+"name": "QQ飞车",
+"url": "http://act.daoju.qq.com/a20170323speedyao/index.html",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/speed.png"
+},
+{
+"name": "疾风之刃",
+"url": "http://jf.qq.com/cp/a20160311syxyx/index.htm",
+"img_url": "http://ossweb-img.qq.com/images/chanpin/daoju/public/a20170418zk/js5.png"
+},
+{
+"name": "雷霆战争",
+"url": "http://act.daoju.qq.com/act/a20170420zzlt/index.htm",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/zzlt.png"
+},
+{
+"name": "QQ炫舞",
+"url": "http://act.daoju.qq.com/act/a20170405ggk/index.htm",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/x5.png"
+},
+{
+"name": "逆战",
+"url": "http://act.daoju.qq.com/act/a20170216buy/index.htm",
+"img_url": "https://ossweb-img.qq.com/images/chanpin/daoju/public/a20170511dj66m/nz.png"
+}
+],
+1 : [
+{
+"name": "CFM",
+"url": "http://m.daoju.qq.com/act/a20170308crowd/index.htm",
+"img_url": "http://ossweb-img.qq.com/images/chanpin/daoju/public/a20170407dj/fl24.png"
+},
+{
+"name": "王者荣耀",
+"url": "https://m.daoju.qq.com/act/a20170116yxzj/index.html",
+"img_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498056578996&di=91e79aa8cd9f3dcee5c83c49b2ec9e61&imgtype=0&src=http%3A%2F%2Fnewsimg.5054399.com%2Fuploads%2Fuserup%2F1701%2F241120033V7.jpg"
+},
+{
+"name": "剑侠情缘",
+"url": "https://m.daoju.qq.com/act/a20170116yxzj/index.html",
+"img_url": "http://pic.sogou.com/d?query=%BD%A3%CF%C0%C7%E9%D4%B5%CD%BC%C6%AC&st=255&mode=255&did=38#did37"
+},
+{
+"name": "天天炫斗",
+"url": "http://app.daoju.qq.com/act/a20161228ttxd/index.htm",
+"img_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498056621857&di=507ab853835c15c4e3262085e805e2c5&imgtype=0&src=http%3A%2F%2Fpic.3h3.com%2Fup%2F2014-5%2F2014513112352764860.jpg"
+},
+{
+"name": "天天酷跑",
+"url": "http://m.daoju.qq.com/act/a20161219pao/index.htm",
+"img_url": "http://ossweb-img.qq.com/images/chanpin/daoju/public/a20170407dj/fl22.png"
+}
+]}
